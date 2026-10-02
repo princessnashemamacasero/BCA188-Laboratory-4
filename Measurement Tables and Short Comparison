@@ -1,0 +1,26 @@
+| Raw Value | Expected Millivolt | Actual Millivolt Value |
+| :-------: | :----------------: | :--------------------: |
+| 0         | 0                  | 0                      |
+| 4095      | 800                | 892                    |
+| 3071.25   |  1599              | 1802                   |
+| 2047.5    | 2398.5             | 2645                   |
+| 1023.75   | 3198               | 3205                   |
+
+| Raw Value | Expected Millivolt | Actual Millivolt Value |
+| :-------: | :----------------: | :--------------------: |
+| 0         | 0                  | 0                      |
+| 4095      | 255                | 253                    |
+| 3071.25   |  191.25            | 192                    |
+| 2047.5    | 127.5              | 128                    |
+| 1023.75   | 63.75              | 64                     |
+
+| Raw Value | Expected Millivolt | Actual Millivolt Value |
+| :-------: | :----------------: | :--------------------: |
+| 0         | 0 V                | 0 V                    |
+| 64        | 0.825 V            | 0.987 V                |
+| 128       | 1.65 V             | 1.718 V                |
+| 192       | 2.475 V            | 2.486 V                |
+| 255       | 3.3 V              | 3.316 V                |
+
+Comparison:
+The predicted and actual results were mostly similar. There were some small differences because of the hardware and measurement. As the input increased, the output also increased. The experiment showed that the ESP32 can read analog input, control PWM, and produce different DAC voltage levels.
